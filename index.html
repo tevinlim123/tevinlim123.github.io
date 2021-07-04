@@ -76,7 +76,7 @@
     <!-- Jumbotron -->
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-4"><span style="font-family:'Bookman Old Style'">YAYASAN MAIM MASKUB NAHDLATUL WATHAN</span> <!--<br>and <span>better</span> with us--></h1>
+        <h1 class="display-4 pb-3"><span style="font-family:'Bookman Old Style'">YAYASAN MAIM MASKUB NAHDLATUL WATHAN</span> <!--<br>and <span>better</span> with us--></h1>
         <!--<a href="" class="btn btn-primary tombol">Our Work</a>-->
       </div>
     </div>
@@ -292,20 +292,20 @@
                   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pt-4 pb-2">
                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.084468801201!2d103.928779114266!3d1.0989345626375446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d98d432af344f9%3A0x68f68f97013367f2!2sPanti%20Asuhan%20Nahdlatul%20Wathan!5e0!3m2!1sen!2sid!4v1624699017494!5m2!1sen!2sid" width="100%" height="350" style="border:0;border-radius:2px" allowfullscreen="" loading="lazy"></iframe>
                   </div>
-                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-stretch pt-4">
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 align-items-stretch pt-4">
                       <form role="form" name="PantiAsuhan">
                           <!--<div class="card-body">-->
                           <div class="form-group">
                               <label for="exampleInputEmail1">Email :</label>
-                              <input type="email" name="email" style="width:160%" class="form-control" id="exampleInputEmail1" placeholder="Email Anda" required>
+                              <input type="email" name="email" style="width:100%" class="form-control" id="exampleInputEmail1" placeholder="Email Anda" required>
                           </div>
                           <div class="form-group">
                               <label for="exampleInputPassword1">Nomor telp :</label>
-                              <input type="number" name="nohp" style="width:160%" class="form-control" id="Phone" placeholder="Nomor Handphone" required>
+                              <input type="tel" name="nohp" style="width:100%" class="form-control" id="Phone" autocomplete="off" placeholder="Nomor Handphone" onkeypress="return onlyNumberKey(event)" required>
                           </div>
                           <div class="form-group">
                               <label for="exampleInputPassword1">Pesan :</label>
-                              <textarea type="text" name="pesan" style="width:160%;height:90px" class="form-control" id="exampleInputPassword1" placeholder="Pesan Anda" required></textarea>
+                              <textarea type="text" name="pesan" style="width:100%;height:90px" class="form-control" id="exampleInputPassword1" placeholder="Pesan Anda" required></textarea>
                           </div>
                           <!--<div class="form-check">
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -314,7 +314,7 @@
                           <!--</div>-->
                           <!-- /.card-body -->
                           <div class="card-footer">
-                              <button type="submit" id="submit" style="width:130%;margin-left:-17px" class="btn btn-primary">Kirim Pesan</button>
+                              <button type="submit" id="submit" style="width:108%;margin-left:-17px" class="btn btn-primary">Kirim Pesan</button>
                           </div>
                       </form>
                   </div>
@@ -381,11 +381,14 @@
 <script src="js/jquery-1.10.2.min.js"></script>
 <script src="js/sweetalert2.min.js"></script>
 <script>
-    //function Submit() {
-    //    $('#exampleInputEmail1').val('');
-    //    $('#Phone').val('');
-    //    $('#exampleInputPassword1').val('');
-    //}
+    function onlyNumberKey(evt) {
+
+        // Only ASCII character in that range allowed
+        var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+        if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+            return false;
+        return true;
+    }
     $("#submit").click(function () {
         var email = $('#exampleInputEmail1').val();
         var n = email.includes("@");
