@@ -1,0 +1,383 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <title>Panti Asuhan</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/bootstrap-4.min.css">
+    <style>
+ .jumbotron {
+    background: url(../img/bg.jpg) !important;
+    background-size: cover !important;
+    /*height: 540px;*/
+    position: relative !important;
+    z-index: -1 !important;
+
+      /*background-repeat: no-repeat;
+  background-position: center top ;*/
+}
+
+ .jumbotron::after {
+    content: '' !important;
+    display: block !important;
+    position: absolute !important;
+    width: 100% !important;
+    height: 50% !important;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0)) !important;
+    bottom: 0 !important;
+}
+
+.jumbotron .container {
+    color: white !important;
+    text-align: center !important;
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+  .swal2-popup.swal2-toast .swal2-title {
+            flex-grow: 1;
+            justify-content: flex-start;
+            margin: 0 .6em;
+            font-size: 1.075rem !important;
+            padding-left: 8px !important;
+        }
+ hr.new5 {
+  border: 5px solid dodgerblue;
+  border-radius: 5px;
+}
+   body{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important
+        }
+             #about{
+  background-color: #102128;
+  /*margin-top: 79px;
+  color: white;*/
+  color:white
+}
+             #kaki{
+  color: rgb(40,78,94);
+  background-color: #0f1517;
+}
+#home .isi .atas{
+  background-color:#f9f8f8;
+  margin-top:20px;
+  padding-bottom:37px;
+}
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#3d5a80">
+        <div class="container-fluid">
+            <img src="img/logo.jpg" style="border-radius:50%;width:25px;height:25px;" />
+            <a class="navbar-brand" style="font-size:16px" href="/index.html">&nbsp;Panti Asuhan Nahdlatul Wathan</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup1" aria-controls="navbarNavAltMarkup1" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup1">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="/Program.html">Program Kegiatan</a>
+                    <a class="nav-item nav-link active" href="/Struktur.html">Struktur Organisasi</a>
+                    <!--<a class="nav-item nav-link" href="#">Tentang Kami</a>-->
+                    <button type="button" class="nav-item nav-link btn btn-primary text-white tombol" data-toggle="modal" data-target=".bd-example-modal-lg">Galeri</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid" style="height:400px"> 
+        <div class="container">
+            <h1 class="display-4"><span style="font-family:'Bookman Old Style'">STRUKTUR ORGANISASI</span> <!--<br>and <span>better</span> with us--></h1>
+            <!--<a href="" class="btn btn-primary tombol">Our Work</a>-->
+        </div>
+    </div>
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg  modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-primary">
+                    <h2 class="modal-title" id="exampleModalLongTitle" style="font-family:'Bell MT';font-weight:bold;color:white">Galeri</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="w3-row-padding w3-text-white w3-large">
+                        <div class="w3-half w3-margin-bottom">
+                            <div class="w3-display-container">
+                                <!--<img src="/w3images/cinqueterre.jpg" alt="Cinque Terre" style="width:100%">-->
+                                <!--<span class="w3-display-bottomleft w3-padding">Cinque Terre</span>-->
+                                <video width="100%" height="280" controls>
+                                    <source src="img/video2.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                        <div class="w3-half">
+                            <div class="w3-row-padding" style="margin:0 -16px">
+                                <div class="w3-half w3-margin-bottom">
+                                    <div class="w3-display-container">
+                                        <img src="img/misi.jpg" alt="New York" style="width:100%">
+                                        <!--<span class="w3-display-bottomleft w3-padding">New York</span>-->
+                                    </div>
+                                </div>
+                                <div class="w3-half w3-margin-bottom">
+                                    <div class="w3-display-container">
+                                        <img src="img/page1.jpeg" alt="San Francisco" style="width:100%">
+                                        <!--<span class="w3-display-bottomleft w3-padding">San Francisco</span>-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w3-row-padding" style="margin:0 -16px">
+                                <div class="w3-half w3-margin-bottom">
+                                    <div class="w3-display-container">
+                                        <img src="img/foto3.jpg" alt="Pisa" style="width:100%">
+                                        <!--<span class="w3-display-bottomleft w3-padding">Pisa</span>-->
+                                    </div>
+                                </div>
+                                <div class="w3-half w3-margin-bottom">
+                                    <div class="w3-display-container">
+                                        <img src="img/visi.jpg" alt="Paris" style="width:100%">
+                                        <!--<span class="w3-display-bottomleft w3-padding">Paris</span>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-row-padding w3-text-white w3-large">
+                        <div class="w3-half w3-margin-bottom">
+                            <div class="w3-display-container">
+                                <!--<img src="/w3images/cinqueterre.jpg" alt="Cinque Terre" style="width:100%">-->
+                                <!--<span class="w3-display-bottomleft w3-padding">Cinque Terre</span>-->
+                                <video width="100%" height="100%" controls>
+                                    <source src="img/video.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                        <div class="w3-half">
+                            <div class="w3-row-padding" style="margin:0 -16px">
+                                <div class="w3-half w3-margin-bottom">
+                                    <div class="w3-display-container">
+                                        <img src="img/foto5.jpg" alt="Pisa" style="width:100%">
+                                        <!--<span class="w3-display-bottomleft w3-padding">Pisa</span>-->
+                                    </div>
+                                </div>
+                                <div class="w3-half w3-margin-bottom">
+                                    <div class="w3-display-container">
+                                        <img src="img/foto4.jpg" alt="Paris" style="width:100%">
+                                        <!--<span class="w3-display-bottomleft w3-padding">Paris</span>-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w3-row-padding" style="margin:0 -16px">
+                                <div class="w3-half w3-margin-bottom">
+                                    <div class="w3-display-container">
+                                        <img src="img/foto1.jpg" alt="New York" style="width:100%">
+                                        <!--<span class="w3-display-bottomleft w3-padding">New York</span>-->
+                                    </div>
+                                </div>
+                                <div class="w3-half w3-margin-bottom">
+                                    <div class="w3-display-container">
+                                        <img src="img/p.png" alt="San Francisco" style="width:100%">
+                                        <!--<span class="w3-display-bottomleft w3-padding">San Francisco</span>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer" style="background-color:#b4b4cb">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <hr class="new5">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <b>I. IDENTITAS LEMBAGA</b>
+            </div>
+        </div>
+        <div class="row" >
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" >
+                <ol type="A">
+                    <br />
+                    <li><b>Nama Lembaga : </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nadhlatul Wathan</li>
+                    <br />
+                    <li><b>Didirikan tanggal :</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12 Agustus 1998</li>
+                    <br />
+                    <li><b>Jumlah Anak Panti Asuhan :</b> &nbsp;&nbsp;&nbsp;> 50 orang</li>
+                    <br />
+                    <li><b>Pendiri Panti Asuhan :</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HJ. Rumasi Idris</li>
+                    <br />
+                    <li><b>Ketua Panti Asuhan :</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Muhammad Sazali</li>
+                    <br />
+                    <li><b>Wakil Panti Asuhan :</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hadiatul Aini</li>
+                    <br />
+                    <li><b>Sekretaris Panti Asuhan :</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Abu Bakar</li>
+                    <br />
+                    <li><b>Bendahara Panti Asuhan :</b> &nbsp;&nbsp;&nbsp;Isnaini Khalilah</li>
+                    <br />
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+                            <li><b>Pembina Panti Asuhan:</b></li>
+                            </div>
+                        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-6">
+                            <ul class="pl-1">
+                                <li>M.Fausan</li>
+                                <li>Jailani</li>
+                                <li>Sarwandi</li>
+                                <li>Maemunah</li>
+                            </ul>  
+                        </div>
+                     </div>
+                </ol> 
+
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pl-4">
+                <div style="display:inline-block;vertical-align:top;">
+                    <img src="img/foto.jpg" alt="Snow" style="width:60%;  border: 5px solid dodgerblue; border-radius:5px">
+                    </div>
+                <div style="display:inline-block;padding-left:17%">
+                    <b>(HJ.Rumasi Idris)</b>
+                </div>
+
+                </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-bottom:-20px">
+                <hr class="new5">
+                <br />
+                <img src="img/anak.jpg" width="100%" height="75%" style="border:5px solid dodgerblue"/>
+                <!--<br />
+                <br />
+                <hr class="new5">-->
+             </div>
+          </div>
+    </div>
+    <!-- akhir container -->
+    <div id="about" style="margin-top:30px">
+        <div class="container footer">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pt-4 pb-2">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.084468801201!2d103.928779114266!3d1.0989345626375446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d98d432af344f9%3A0x68f68f97013367f2!2sPanti%20Asuhan%20Nahdlatul%20Wathan!5e0!3m2!1sen!2sid!4v1624699017494!5m2!1sen!2sid" width="100%" height="350" style="border:0;border-radius:2px" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-stretch pt-4">
+                    <form role="form" name="PantiAsuhan">
+                        <!--<div class="card-body">-->
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email :</label>
+                            <input type="email" name="email" style="width:160%" class="form-control" id="exampleInputEmail1" placeholder="Email Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Nomor telp :</label>
+                            <input type="number" name="nohp" style="width:160%" class="form-control" id="Phone" placeholder="Nomor Handphone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Pesan :</label>
+                            <textarea type="text" name="pesan" style="width:160%;height:90px" class="form-control" id="exampleInputPassword1" placeholder="Pesan Anda" required></textarea>
+                        </div>
+                        <!--<div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>-->
+                        <!--</div>-->
+                        <!-- /.card-body -->
+                        <div class="card-footer">
+                            <button type="submit" id="submit" style="width:130%;margin-left:-17px" class="btn btn-primary">Kirim Pesan</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <!-- kaki -->
+    <div id="kaki" style="padding-bottom:5px;padding-top:3px">
+        <div class="container">
+            <h5 class="text-center" style="font-family:'Cordia New'"><b>&#169; Last Modified: 2021.</b></h5>
+        </div>
+    </div>
+    <button type="button" style="display:none" class="btn btn-success swalDefaultSuccess">
+        Launch Success Toast
+    </button>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyiySQ5Mi1Ms_VpHRMpoOF3B3N8f0MLBDosf7AXqZTEEAtE9_NicpjIpax7r4-GTOE_/exec'
+  const form = document.forms['PantiAsuhan']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+    </script>
+</body>
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/MotionPathPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
+<script>
+    gsap.from('.navbar-light', { duration: 1, y: -100, opacity: 1, ease: 'bounce' })
+    gsap.from('.display-4', { duration: 1, x: -50, opacity: 0, delay: 0.5, ease: 'back' })
+    //gsap.registerPlugin(TextPlugin);
+    //gsap.to('.display-4', { duration: 10, delay: 0.5, text: 'YAYASAN MAIM MASKUB NAHDLATUL WATHAN' ,style:"font-family:'Bookman Old Style'"} )
+
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        once: true,
+    });
+</script>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/sweetalert2.min.js"></script>
+<script>
+    //function Submit() {
+    //    $('#exampleInputEmail1').val('');
+    //    $('#Phone').val('');
+    //    $('#exampleInputPassword1').val('');
+    //}
+    $("#submit").click(function () {
+        var email = $('#exampleInputEmail1').val();
+        var n = email.includes("@");
+        var pnum = $('#Phone').val();
+        var pesan = $('#exampleInputPassword1').val();
+        if (email != '' && pnum != '' && pesan != '' && n == true) {
+            $(".swalDefaultSuccess").click();
+            var delay = 1500;
+            setTimeout(function () {
+                $('#exampleInputEmail1').val('');
+                $('#Phone').val('');
+                $('#exampleInputPassword1').val('');
+            }, delay);
+        }
+    });
+    $(function () {
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-right',
+            showConfirmButton: false,
+            timer: 1500
+        });
+
+        $('.swalDefaultSuccess').click(function () {
+            Toast.fire({
+                icon: 'success',
+                title: 'Login Successfully'
+            })
+        });
+    });
+</script>
